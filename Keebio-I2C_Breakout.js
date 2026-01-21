@@ -22,6 +22,25 @@ module.exports = {
         if (p.valpos.length === 2) {
           p.valpos.push(p.r);
         }
+        const lblrot = (rot) => {
+            // rotate and adjust rotation for readability
+            if (rot > 90 || rot < -90) {
+                rot += 180;
+            }
+            return rot;
+        };
+        const lbljust = (rot, justify) => {
+            // rotate and adjust justify left/right for readability
+            if (rot > 90 || rot < -90) {
+                if (justify === 'left') {
+                    justify = 'right';
+                } else if (justify === 'right') {
+                    justify = 'left';
+                }
+                // ignore center
+            }
+            return justify;
+        };
         return `(footprint "I2C_Breakout" (version 20210126) (generator pcbnew) (layer "F.Cu")
     ${p.at /* parametric position */}
   (tedit 60242D9C)
@@ -32,27 +51,27 @@ module.exports = {
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp c014b26a-0804-4fd2-9801-a81caa6ec2ee)
   )
-  (fp_text value "${p.value}" (at ${pos(p.valpos)}) (layer "F.Fab")
+  (fp_text value "${p.value}" (at ${pos(p.valpos)}) (layer "F.Fab") (hide yes)
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 8725338a-2ad7-4024-bdbe-a87344fe0675)
   )
-  (fp_text user "GND" (at 1.27 0 unlocked) (layer "F.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  (fp_text user "GND" (at 1.27 0 ${lblrot(p.rot)}) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)) (justify ${lbljust(p.rot, 'left')}))
     (tstamp 7f758bbb-02e6-4762-bffb-2fdcc4d322ad)
   )
-  (fp_text user "VCC" (at 1.27 2.54 unlocked) (layer "F.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  (fp_text user "VCC" (at 1.27 2.54 ${lblrot(p.rot)}) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)) (justify ${lbljust(p.rot, 'left')}))
     (tstamp 1a8271cf-7099-4ae3-bf98-6a3a35cbe5a0)
   )
-  (fp_text user "SCL/D0" (at 1.27 5.08 unlocked) (layer "F.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  (fp_text user "SCL/D0" (at 1.27 5.08 ${lblrot(p.rot)}) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)) (justify ${lbljust(p.rot, 'left')}))
     (tstamp 9a31798b-bf86-4f44-8de2-17d04bbb91d8)
   )
-  (fp_text user "SDA/D1" (at 1.27 7.62 unlocked) (layer "F.SilkS")
-    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  (fp_text user "SDA/D1" (at 1.27 7.62 ${lblrot(p.rot)}) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)) (justify ${lbljust(p.rot, 'left')}))
     (tstamp 69d6998c-4d6c-4446-a85e-e2aca8e26073)
   )
-  (fp_text user "${p.ref}" (at 0 3.81 90) (layer "F.Fab")
+  (fp_text user "${p.ref}" (at -1.27 3.81 ${lblrot(p.rot + 90)}) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 4b08a10f-8a0c-4a7f-a23b-1d2533e0189e)
   )
