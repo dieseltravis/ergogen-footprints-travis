@@ -6,7 +6,7 @@ See https://github.com/ceoloide/ergogen-footprints for info on how to properly i
 How I add this submodule:
 ```bash
 git submodule add https://github.com/dieseltravis/ergogen-footprints-travis/ footprints/travis
-#Note:#######################################################################^^^^^^^^^^ This path should match where your local footprints directory is
+# Note: This path should match where your local footprints directory is -----^^^^^^^^^^
 ```
 
 In your config.yaml:
