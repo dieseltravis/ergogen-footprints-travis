@@ -7,6 +7,10 @@ How I add this submodule:
 ```bash
 git submodule add https://github.com/dieseltravis/ergogen-footprints-travis/ footprints/travis
 # Note: This path should match where your local footprints directory is -----^^^^^^^^^^
+git submodule update --recursive --remote
+git add footprints/travis # same as above
+git add .gitmodules
+git commit -m "added @dieseltravis/ergogen-footprints-travis submodule"
 ```
 
 In your config.yaml:
