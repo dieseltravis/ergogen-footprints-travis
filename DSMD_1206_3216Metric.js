@@ -1,0 +1,187 @@
+// DSMD_1206_3216Metric
+// Diode SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal
+// http://www.tortai-tech.com/upload/download/2011102023233369053.pdf
+module.exports = {
+    params: {
+        designator: 'D',
+        side: 'F',
+        value: "C_1206_3216Metric",
+        from: { type: 'net', value: '' },
+        to: { type: 'net', value: '' },
+        refpos: [0, -1.82],
+        valpos: [0, 1.82],
+        KICAD8_3DMODEL_DIR: '${KICAD8_3DMODEL_DIR}'
+    },
+    body: p => {
+      const pos = (arr) => arr.join(' ');
+      if (p.refpos.length === 2) {
+        p.refpos.push(p.r);
+      }
+      if (p.valpos.length === 2) {
+        p.valpos.push(p.r);
+      }
+      return `(footprint "D_1206_3216Metric" (version 20240108) (generator "pcbnew") (generator_version "8.0")
+      (layer "${p.side}.Cu")
+      (descr "Diode SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+      (tags "diode")
+
+      ${p.at /* parametric position */}
+      (property "Reference" "${p.ref}" (at ${pos(p.refpos)}) (layer "${p.side}.SilkS")(uuid "44a65e6b-5c76-4357-9708-b3c78a5868ca")
+        (effects (font (size 1 1) (thickness 0.15)) (justify ${p.side === 'B' ? 'mirror' : ''}))
+      )
+      (property "Value" "D_1206_3216Metric" (at ${pos(p.valpos)}) (layer "${p.side}.Fab")(uuid "8b0a33c5-59c6-4698-9fca-6c8d6a2a174e") (hide yes)
+        (effects (font (size 1 1) (thickness 0.15)))
+      )
+      (property "Footprint" "D_1206_3216Metric" (at 0 0 0)(unlocked yes)
+     (layer "${p.side}.Fab")(hide yes)
+    (uuid "f2b8b3df-9df8-4a34-8537-60fede6845be")
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Datasheet" "" (at 0 0 0)(unlocked yes)
+     (layer "${p.side}.Fab")(hide yes)
+    (uuid "cefde33d-5f22-42a1-96d1-231f820de1f3")
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Description" "" (at 0 0 0)(unlocked yes)
+     (layer "${p.side}.Fab")(hide yes)
+    (uuid "006e158e-ba9c-40b7-87cb-e72b745cab52")
+        (effects (font (size 1.27 1.27)))
+      )
+      (attr smd)
+      (fp_line
+			(start -2.285 1.135)
+			(end -0.762 1.135)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "${p.side}.SilkS")
+			(uuid "4110fbbf-9988-40a8-b715-96df3079a5ce")
+		)
+		(fp_line
+			(start -2.285 -1.135)
+			(end -2.285 1.135)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "${p.side}.SilkS")
+			(uuid "3186f03e-a723-4f0c-a6f6-f2c043acdbae")
+		)
+		(fp_line
+			(start -0.762 -1.135)
+			(end -2.285 -1.135)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "${p.side}.SilkS")
+			(uuid "8ce7dbde-718f-40bc-8d6d-c8369e48215d")
+		)
+		(fp_line
+			(start -2.28 1.12)
+			(end -2.28 -1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "${p.side}.CrtYd")
+			(uuid "19e7c7b2-493d-498f-a373-2c587ea9ba29")
+		)
+		(fp_line
+			(start 2.28 1.12)
+			(end -2.28 1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "${p.side}.CrtYd")
+			(uuid "b568dfa9-954b-4eb8-b2a9-07a8dcb02ee4")
+		)
+		(fp_line
+			(start -2.28 -1.12)
+			(end 2.28 -1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "${p.side}.CrtYd")
+			(uuid "bfec12c0-251e-4cc9-8259-70e71065ac02")
+		)
+		(fp_line
+			(start 2.28 -1.12)
+			(end 2.28 1.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "${p.side}.CrtYd")
+			(uuid "bc9fb179-f152-437a-9049-87ac71547ef4")
+		)
+		(fp_line
+			(start -1.2 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "${p.side}.Fab")
+			(uuid "dee3e015-8911-470b-b433-65005ec41836")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "${p.side}.Fab")
+			(uuid "3f75f099-5cb8-4bc2-a080-99afaa8df3b5")
+		)
+		(fp_line
+			(start -1.6 0.4)
+			(end -1.2 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "${p.side}.Fab")
+			(uuid "ac2d22e8-c573-495d-9ac3-a086fc5c46ba")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "${p.side}.Fab")
+			(uuid "0f8c71fd-d32b-4cf1-bb51-33c070c4c99e")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "${p.side}.Fab")
+			(uuid "a61c36fd-bdca-4284-8c91-4367d98647a1")
+		)
+      (fp_text user "${'${REFERENCE}'}" (at 0 0 0) (layer "${p.side}.Fab")(uuid "5dfef82a-8485-4c7c-abcc-723721b54c46") (hide yes)
+        (effects (font (size 0.8 0.8) (thickness 0.12)))
+      )
+      (pad "1" smd roundrect (at -1.4 0 ${p.r}) (size 1.25 1.75) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask") (roundrect_rratio 0.2)
+    (uuid "f55b2062-702a-4421-9ce1-b716bf19bec5") ${ p.to.str }
+      )
+      (pad "2" smd roundrect (at 1.4 0 ${p.r}) (size 1.25 1.75) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask") (roundrect_rratio 0.2)
+    (uuid "f6582e0a-091d-48a5-91b1-a6e76689891f") ${ p.from.str }
+      )
+      (model "${p.KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_1206_3216Metric.wrl"
+        (offset (xyz 0 0 0))
+        (scale (xyz 1 1 1))
+        (rotate (xyz 0 0 0))
+      )
+    )`;
+    }
+};
