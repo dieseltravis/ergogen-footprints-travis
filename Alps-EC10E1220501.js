@@ -10,7 +10,7 @@ module.exports = {
         valpos: [-0.167, -5.334, 0],
         P1:  {type: 'net', value: 'A' }, // Output A
         P2:  {type: 'net', value: 'B'},  // Output B
-        P3:  {type: 'net', value: 'C' }, // 
+        P3:  {type: 'net', value: 'C' }, //
         P4:  {type: 'net', value: 'GND' }, // 2 outer pins
         TRAVIS_KICAD: '${TRAVIS_KICAD}' // ~/Projects/ergogen-footprints-travis/travis.pretty
     },
@@ -36,6 +36,10 @@ module.exports = {
                     justify = 'right';
                 } else if (justify === 'right') {
                     justify = 'left';
+                } else if (justify === 'top') {
+                    justify = 'bottom';
+                } else if (justify === 'bottom') {
+                    justify = 'top';
                 }
                 // ignore center
             }
@@ -235,13 +239,13 @@ module.exports = {
 		(uuid "ff98b47b-85a2-4dae-8b7b-3f148938858e")
 	)
 	(fp_text user "SHAFT"
-		(at 0.5 1.75)
+		(at 0.5 1.75 ${lblrot(p.rot)})
 		(unlocked yes)
 		(layer "Cmts.User")
 		(uuid "5b7eecca-ca35-4136-8f4c-58c47162cb61")
 		(effects
 			(font (size 0.5 0.5) (thickness 0.125))
-			(justify left bottom)
+			(justify ${lbljust(p.rot, 'left')} ${lbljust(p.rot, 'bottom')})
 		)
 	)
 	(fp_text user "${p.ref}"
@@ -303,9 +307,9 @@ module.exports = {
 	)
 	(embedded_fonts no)
     (model "${p.TRAVIS_KICAD}/Alps-EC10E1220501.step"
-        (offset (xyz 0 0 0))
+        (offset (xyz 0 0 9.2))
         (scale (xyz 1 1 1))
-        (rotate (xyz 0 0 90))
+        (rotate (xyz 270 0 180))
     )
 )`;
     }

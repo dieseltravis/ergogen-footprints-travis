@@ -12,7 +12,8 @@ module.exports = {
         P2:  {type: 'net', value: 'VCC'},  // 3.3v
         P3:  {type: 'net', value: 'SCL' }, // SCL/D0
         P4:  {type: 'net', value: 'SDA' }, // SDA/D1
-        KEEBIO_KICAD: '${KEEBIO_KICAD}'
+        //KEEBIO_KICAD: '${KEEBIO_KICAD}',
+        KICAD9_3DMODEL_DIR: '${KICAD9_3DMODEL_DIR}'
     },
     body: p => {
         const pos = (arr) => arr.join(' ');
@@ -88,6 +89,12 @@ module.exports = {
   (pad "2" thru_hole oval (at 0 2.54 ${p.rot}) (locked) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) ${ p.P2.str } (tstamp 099f7aa3-e922-4ef1-9732-ae8a90f2d205))
   (pad "3" thru_hole oval (at 0 5.08 ${p.rot}) (locked) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) ${ p.P3.str } (tstamp 629c663c-f05f-4cc6-b74e-9958f34ed5f7))
   (pad "4" thru_hole oval (at 0 7.62 ${p.rot}) (locked) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) ${ p.P4.str } (tstamp 13c1c6a1-300b-4210-8cc0-b9eb4e2ced94))
+
+  (model "${p.KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 0.75))
+    (rotate (xyz 0 0 0))
+  )
 )`;
     }
 };

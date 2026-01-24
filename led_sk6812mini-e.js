@@ -51,16 +51,17 @@
 //      or above 0.8 (KiCad default), to avoid overlap or DRC errors
 //    via_drill: default is 0.4
 //      allows to define the size of the drill. Not recommended below 0.3 (JLCPCB minimum),
-//      or above 0.4 (KiCad default), to avoid overlap or DRC errors 
+//      or above 0.4 (KiCad default), to avoid overlap or DRC errors
 //    include_courtyard: default is true
 //      if true it will include the part courtyard
 //    include_keepout: default is false
 //      if true it will include the part keepout area
 //
-//  Travis updates: 
+//  Travis updates:
 //  * made P2 & P4 nets
 //  * added value to Fab layer
 //  * added ref and val positioning
+//  * 3d model
 
 module.exports = {
   params: {
@@ -82,7 +83,8 @@ module.exports = {
     P1: { type: 'net', value: 'VCC' },     // VDD
     P2: { type: 'net', value: undefined }, // DOUT
     P3: { type: 'net', value: 'GND' },     // GND (cut pin)
-    P4: { type: 'net', value: undefined }  // DIN
+    P4: { type: 'net', value: undefined }, // DIN
+    SCOTTOKEEBS_KICAD: '${SCOTTOKEEBS_KICAD}'
   },
   body: p => {
     const pos = (arr) => arr.join(' ');
@@ -127,7 +129,7 @@ module.exports = {
     }
 
     const standard_opening = `
-      (module "travis:led_SK6812mini-e (${p.reverse_mount ? "per-key" : "underglow"}, ${p.reversible ? "reversible" : "single-side"})" 
+      (module "travis:led_SK6812mini-e (${p.reverse_mount ? "per-key" : "underglow"}, ${p.reversible ? "reversible" : "single-side"})"
         (layer ${p.side}.Cu)
         ${p.at /* parametric position */}
 
@@ -205,6 +207,12 @@ module.exports = {
         (fp_line (start -1.8 1.55) (end 1.8 1.55) (layer Edge.Cuts) (width 0.12))
         (fp_line (start 1.8 1.55) (end 1.8 -1.55) (layer Edge.Cuts) (width 0.12))
         (fp_line (start 1.8 -1.55) (end -1.8 -1.55) (layer Edge.Cuts) (width 0.12))
+
+	(model "${p.SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/LED_SK6812MINI.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 90 0 180))
+	)
       )
     `
 
