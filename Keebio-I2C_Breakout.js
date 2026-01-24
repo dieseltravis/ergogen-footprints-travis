@@ -12,6 +12,7 @@ module.exports = {
         P2:  {type: 'net', value: 'VCC'},  // 3.3v
         P3:  {type: 'net', value: 'SCL' }, // SCL/D0
         P4:  {type: 'net', value: 'SDA' }, // SDA/D1
+        justify_override: '',              // HACK: override the justify setting of labels
         //KEEBIO_KICAD: '${KEEBIO_KICAD}',
         KICAD9_3DMODEL_DIR: '${KICAD9_3DMODEL_DIR}'
     },
@@ -40,7 +41,7 @@ module.exports = {
                 }
                 // ignore center
             }
-            return justify;
+            return p.justify_override || justify;
         };
         return `(footprint "I2C_Breakout" (version 20210126) (generator pcbnew) (layer "F.Cu")
     ${p.at /* parametric position */}
