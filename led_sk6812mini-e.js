@@ -129,7 +129,7 @@ module.exports = {
     }
 
     const standard_opening = `
-      (module "travis:led_SK6812mini-e (${p.reverse_mount ? "per-key" : "underglow"}, ${p.reversible ? "reversible" : "single-side"})"
+      (footprint "led_SK6812mini-e (${p.reverse_mount ? "per-key" : "underglow"}, ${p.reversible ? "reversible" : "single-side"})"
         (layer ${p.side}.Cu)
         ${p.at /* parametric position */}
 
@@ -139,6 +139,7 @@ module.exports = {
         (fp_text value "${p.value}" (at ${pos(p.valpos)}) (layer "${p.side}.Fab") (hide yes)
           (effects (font (size 0.8 0.8) (thickness 0.15)))
         )
+        (attr smd)
         (fp_line (start -1.6 -1.4) (end 1.6 -1.4) (layer Dwgs.User) (width 0.12))
         (fp_line (start -1.6 1.4) (end 1.6 1.4) (layer Dwgs.User) (width 0.12))
         (fp_line (start -1.6 -1.4) (end -1.6 1.4) (layer Dwgs.User) (width 0.12))
