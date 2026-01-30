@@ -29,7 +29,7 @@ module.exports = {
       (property "Reference" "${p.ref}" (at ${pos(p.refpos)}) (layer "${p.side}.SilkS")(uuid "44a65e6b-5c76-4357-9708-b3c78a5868ca")
         (effects (font (size 1 1) (thickness 0.15)) (justify ${p.side === 'B' ? 'mirror' : ''}))
       )
-      (property "Value" "D_1206_3216Metric" (at ${pos(p.valpos)}) (layer "${p.side}.Fab")(uuid "8b0a33c5-59c6-4698-9fca-6c8d6a2a174e") (hide yes)
+      (property "Value" "${p.value}" (at ${pos(p.valpos)}) (layer "${p.side}.Fab")(uuid "8b0a33c5-59c6-4698-9fca-6c8d6a2a174e") (hide yes)
         (effects (font (size 1 1) (thickness 0.15)))
       )
       (property "Footprint" "D_1206_3216Metric" (at 0 0 0)(unlocked yes)
