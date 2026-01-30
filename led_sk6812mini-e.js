@@ -79,6 +79,7 @@ module.exports = {
     include_keepout: false,
     refpos: [-4.75, 0],
     valpos: [0, -2.25],
+    ref_override: '',
     value: 'SK6812mini-e',
     P1: { type: 'net', value: 'VCC' },     // VDD
     P2: { type: 'net', value: undefined }, // DOUT
@@ -133,7 +134,7 @@ module.exports = {
         (layer ${p.side}.Cu)
         ${p.at /* parametric position */}
 
-        (fp_text reference "${p.ref}" (at ${pos(p.refpos)}) (layer ${p.side}.SilkS) ${p.ref_hide}
+        (fp_text reference "${ p.ref_override && p.ref_override.length ? p.ref_override : p.ref }" (at ${pos(p.refpos)}) (layer ${p.side}.SilkS) ${p.ref_hide}
           (effects (font (size 1 1) (thickness 0.15)) (justify ${p.side === 'B' ? ' mirror' : ''}))
         )
         (fp_text value "${p.value}" (at ${pos(p.valpos)}) (layer "${p.side}.Fab") (hide yes)
