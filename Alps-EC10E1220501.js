@@ -10,7 +10,7 @@ module.exports = {
         valpos: [-0.167, -5.334, 0],
         P1:  {type: 'net', value: 'A' }, // Output A
         P2:  {type: 'net', value: 'B'},  // Output B
-        P3:  {type: 'net', value: 'C' }, //
+        P3:  {type: 'net', value: 'C' }, // Common
         P4:  {type: 'net', value: 'GND' }, // 2 outer pins
         TRAVIS_KICAD: '${TRAVIS_KICAD}' // ~/Projects/ergogen-footprints-travis/travis.pretty
     },
