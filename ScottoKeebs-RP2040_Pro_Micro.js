@@ -94,7 +94,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1.27 1.524)
-				(thickness 0.2032)
+				(thickness 0.15032)
 			)
 		)
 	)
@@ -106,7 +106,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1.27 1.524)
-				(thickness 0.2032)
+				(thickness 0.15032)
 			)
 		)
 	)
@@ -282,7 +282,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -296,7 +296,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -310,7 +310,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -324,7 +324,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -338,7 +338,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -352,7 +352,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -366,7 +366,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -380,7 +380,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -394,7 +394,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -408,7 +408,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 90, 'right')} mirror)
@@ -422,7 +422,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -436,7 +436,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 90, 'right')} mirror)
@@ -450,7 +450,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -464,7 +464,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -478,7 +478,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -492,7 +492,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -506,7 +506,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -520,7 +520,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -534,7 +534,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -548,7 +548,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -562,7 +562,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 90, 'right')} mirror)
@@ -576,7 +576,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 90, 'right')} mirror)
@@ -590,7 +590,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -604,7 +604,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -618,7 +618,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -632,7 +632,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -646,7 +646,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -660,7 +660,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -674,7 +674,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'right')} mirror)
@@ -688,7 +688,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 90, 'right')} mirror)
@@ -702,7 +702,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'left')} mirror)
@@ -716,7 +716,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -730,7 +730,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -744,7 +744,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -758,7 +758,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -772,7 +772,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -786,7 +786,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -800,7 +800,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 90, 'right')})
@@ -814,7 +814,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 90, 'right')})
@@ -828,7 +828,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -842,7 +842,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 90, 'right')})
@@ -856,7 +856,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -870,7 +870,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -884,7 +884,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -898,7 +898,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -912,7 +912,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -926,7 +926,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -940,7 +940,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -954,7 +954,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -968,7 +968,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -982,7 +982,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 90, 'right')})
@@ -996,7 +996,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -1010,7 +1010,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -1024,7 +1024,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -1038,7 +1038,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 90, 'right')})
@@ -1052,7 +1052,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -1066,7 +1066,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -1080,7 +1080,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -1094,7 +1094,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})
@@ -1108,7 +1108,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -1122,7 +1122,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot - 45, 'left')})
@@ -1136,7 +1136,7 @@ module.exports = {
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.2)
+				(thickness 0.15)
 				(bold yes)
 			)
 			(justify ${lbljust(p.rot + 45, 'right')})

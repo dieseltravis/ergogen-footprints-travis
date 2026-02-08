@@ -40,7 +40,7 @@ module.exports = {
     (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.from.str})
     (pad 2 thru_hole oval (at 10.16 0 ${p.r}) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) ${p.to.str})
     (fp_text user %R (at 5.08 0) (layer ${p.side}.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) ${p.side === 'B' ? '(justify mirror)' : ''})
     )
     (model ${p.KISYS3DMOD}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl
       (at (xyz 0 0 0))
