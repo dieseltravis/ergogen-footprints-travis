@@ -7,7 +7,7 @@ module.exports = {
         // only F for now: side: 'F',
         refpos: [0, 1.625],
         valpos: [0, 0],
-        offset3d: [0, 0, 0],
+        offset3d: [0, 1.27, 5],
         // this footprint is different from Ergogen promicro
         // pads are numbered to match Scotto footprint labelling
         // pads are mapped to promicro pin AVR names when possible
